@@ -1,0 +1,67 @@
+// Bootstrap body background
+$body-bg: #33322d;
+
+// Bootstrap body foreground
+$body-color: seashell;
+
+// Bootstrap theme colors
+$theme-colors: (
+  'primary': #caedff,
+  'secondary': #157a6e
+);
+
+// Sass imports (The variables need to be set prior to importing)
+@import '~bootstrap';
+@import '~bootstrap-vue';
+
+// Unset default Vue CLI foreground color set in App.vue, to prevent override of
+// the color set in $body-color
+#app {
+  color: unset;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 30px;
+  h1 {
+    font-size: 39.06px;
+  }
+  h2 {
+    font-size: 31.25px;
+  }
+  h3 {
+    font-size: 25.00px;
+  }
+  p{
+    font-size: 20.00px;
+  }
+  .caption {
+    font-size:12.80px
+  }
+  .caption-small {
+    font-size: 10.24px;
+  }
+  @media (max-width: 980px) {
+    img {
+      width: 300px;
+    }
+    h1{
+       font-size: 31.25px;
+      // padding-top:3.5rem;
+      // -moz-text-size-adjust: 20%;
+    }
+    h2{
+      font-size: 25.00px;
+      
+    }
+    h3 {
+      font-size: 20.00px;
+      padding-top: 1.5rem;
+    }
+    p {
+      font-size:18px
+    }
+    .register {
+      top: 328.5px;
+    }
+  }
+}
